@@ -5,7 +5,9 @@ This project was bootstrapped with Create React App.
 ## Used Technologies
 
 - Type Script
-- React
+- React, useState, useEffect
+- Redux
+- Material UI
 - Firebase (as backend service )
 
 ## Start service
