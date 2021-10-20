@@ -16,7 +16,7 @@ First, install needful dependencies:
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
 Please, use following credentials to sign in:
 
