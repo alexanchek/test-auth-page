@@ -58,58 +58,59 @@ const ContactCard: React.FC<ContactCardProps> = ({contact}) => {
 
   return (
       <Grid item xs={6}>
-              <Card
-      sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <CardContent sx={{}}>
-          {img ? BoxForImage(img): BoxForImage(UnknownImage)};
-          
-          {editMode 
-          ? <TextField
-            name="name"
-            fullWidth
-            id="firstName"
-            label="Введите имя"
-            autoFocus
-            variant={"standard"}
-            onChange={(e) => setChangedName(e.currentTarget.value)}
-            />
-        :<Typography gutterBottom variant="h5" component="h2">
-        {name}
-        </Typography> }
-        
-        {editMode 
-        ? <TextField
-        fullWidth
-        id="lastName"
-        label="Введите e-mail"
-        name="surname"
-        variant={"standard"}
-        onChange={(e) => setChangedEmail(e.currentTarget.value)}
-        />
-        : 
-        <Typography>
-            E-Mail: {email}
-        </Typography>}
+        <Card
+        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <CardContent sx={{}}>
+                {img ? BoxForImage(img): BoxForImage(UnknownImage)};
+                
+                {editMode 
+                ? <TextField
+                    name="name"
+                    fullWidth
+                    id="firstName"
+                    label="Введите имя"
+                    autoFocus
+                    variant={"standard"}
+                    onChange={(e) => setChangedName(e.currentTarget.value)}
+                    />
+                :<Typography gutterBottom variant="h5" component="h2">
+                {name}
+                </Typography> }
+                
+                {editMode 
+                ? <TextField
+                fullWidth
+                id="lastName"
+                label="Введите e-mail"
+                name="surname"
+                variant={"standard"}
+                onChange={(e) => setChangedEmail(e.currentTarget.value)}
+                />
+                : 
+                <Typography>
+                    E-Mail: {email}
+                </Typography>}
 
 
-        {editMode
-        ? <TextField
-        fullWidth
-        id="email"
-        label="Введите номер"
-        name="email"
-        variant={"standard"}
-        onChange={(e) => setChangedPhone(e.currentTarget.value)}
-        />
-        : <Typography>
-        Phone: {phone}
-    </Typography>}
-      </CardContent>
-      <CardActions>
-        {editMode ? <Button size="small" onClick={handleSaveClick}>Save</Button> : <Button size="small" onClick={handleEditClick}>Edit</Button>}
-        <Button size="small" onClick={handleDeleteClick}>Delete</Button>
-      </CardActions>
-    </Card>
+                {editMode
+                ? <TextField
+                fullWidth
+                id="email"
+                label="Введите номер"
+                name="email"
+                variant={"standard"}
+                onChange={(e) => setChangedPhone(e.currentTarget.value)}
+                />
+                : <Typography>
+                Phone: {phone}
+            </Typography>}
+            </CardContent>
+
+            <CardActions>
+                {editMode ? <Button size="small" onClick={handleSaveClick}>Save</Button> : <Button size="small" onClick={handleEditClick}>Edit</Button>}
+                <Button size="small" onClick={handleDeleteClick}>Delete</Button>
+            </CardActions>
+        </Card>
       </Grid>
   );
 }

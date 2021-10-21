@@ -10,6 +10,7 @@ const ContactCards = () => {
     const dispatch = useDispatch();
     const {data} = useSelector((state: RootState) => state.contacts) 
 
+
     useEffect(() => {
         dispatch(getcontacts())
     }, [dispatch])
@@ -23,7 +24,7 @@ const ContactCards = () => {
                 <Grid container spacing={2}>
                     {data?.map((contact) => {
                         return (
-                            <ContactCard contact={contact}/>
+                            <ContactCard contact={contact} key={contact.uuid}/>
                         )
                     })}
                 </Grid>
