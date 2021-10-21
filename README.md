@@ -24,7 +24,7 @@ In the project directory, you can run:
 
 Please, use following credentials to sign in:
 
-Login: 1@mail.ru
-Password: qwerty
+- Login: 1@mail.ru
+- Password: qwerty
 
 
