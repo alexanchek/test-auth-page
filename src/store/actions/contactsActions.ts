@@ -56,7 +56,7 @@ export const updatecontact = (uuid: string, fields: any): ThunkAction<void, Root
     
                 if (fields[field]) {
                     if (field === 'changedName') {
-                        finalUpdate.firstName = fields[field];
+                        finalUpdate.name = fields[field];
                     }
                     if (field === 'changedEmail') {
                         finalUpdate.email = fields[field];
