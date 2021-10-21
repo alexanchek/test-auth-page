@@ -39,15 +39,6 @@ const AddContactForm = () => {
                     <TextField
                     required
                     fullWidth
-                    id="lastName"
-                    label="Введите фамилию"
-                    name="surname"
-                    />
-                </Grid>
-                <Grid item xs={6}>
-                    <TextField
-                    required
-                    fullWidth
                     id="email"
                     label="Введите e-mail"
                     name="email"
