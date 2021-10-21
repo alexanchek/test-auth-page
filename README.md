@@ -2,6 +2,8 @@
 
 This project was bootstrapped with Create React App. 
 
+[DEMO](https://alexanchek.github.io//test-auth-page-demo/ "demo auth page")
+
 ## Used Technologies
 
 - Type Script
